@@ -1,0 +1,35 @@
+{
+    "horses": [{
+        "id": 1,
+        "name": "Brölfale",
+        "weight": 250,
+        "age": 7,
+        "likes": ["scratches on the nose", "apples", "neighing"],
+        "hates": ["big horses"]
+    },
+    {
+        "id": 2,
+        "name": "Filstråle",
+        "weight": 800,
+        "age": 15,
+        "likes": ["salt"],
+        "hates": ["loud noises"]
+    },
+    {
+        "id": 3,
+        "name": "Lövilevi",
+        "weight": 200,
+        "age": 3,
+        "likes": ["running", "neighing", "carrots", "scratches on the nose"],
+        "hates": []
+    },
+    {
+        "id": 4,
+        "name": "Himmelnos",
+        "weight": 750,
+        "age": 11,
+        "likes": ["apples", "staring into the distance"],
+        "hates": ["scratches on the nose"]
+    }
+    ]
+}
