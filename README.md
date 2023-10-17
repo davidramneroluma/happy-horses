@@ -2,6 +2,8 @@
 
 Welcome to the happy horses workshop!
 
+![Sample Image](assets/paddock.jpg)
+
 ### **Getting started:**
 
 `npm i`
