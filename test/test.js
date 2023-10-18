@@ -18,10 +18,8 @@ describe('Test 2', () => {
 });
 
 describe('Test 3', () => {
-  it('The paddocks are well balanced', async () => {
-    const paddocks = await main('whoLivesWhere');
-    console.log(JSON.stringify(paddocks));
-    assert.strictEqual(paddocks.paddock1.length, 2);
-    assert.strictEqual(paddocks.paddock2.length, 2);
+  it('Professor Kanel is the loneliest horse :(', async () => {
+    const loneliestHorse = await main('loneliest');
+    assert.strictEqual(loneliestHorse, 'Professor Kanel');
   });
 });

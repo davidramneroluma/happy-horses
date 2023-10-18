@@ -36,6 +36,7 @@ async function main(WhichHorseAreYouLookingFor) {
   function groupTheHorsesIntoPaddocks() {
     const paddock1 = [];
     const paddock2 = [];
+    const lonelyHorses = [];
     horses.forEach((horse) => {
       let horseFoundAHome = false;
       let IncompatibleHorsesInPaddock = paddock1.some(
@@ -57,12 +58,13 @@ async function main(WhichHorseAreYouLookingFor) {
         horseFoundAHome = true;
       }
       if (!horseFoundAHome) {
-        throw new Error(`Horse ${horse.name} has no friendly paddock!`);
+        lonelyHorses.push(horse);
       }
     });
     return {
       paddock1: paddock1.map((e) => e.name),
       paddock2: paddock2.map((e) => e.name),
+      lonelyHorses: lonelyHorses.map((e) => e.name),
     };
   }
 
@@ -72,8 +74,10 @@ async function main(WhichHorseAreYouLookingFor) {
   if (WhichHorseAreYouLookingFor == 'Hungriest') {
     return hungriestHorse.name;
   }
-  if (WhichHorseAreYouLookingFor == 'whoLivesWhere') {
-    return groupTheHorsesIntoPaddocks();
+  if (WhichHorseAreYouLookingFor == 'loneliest') {
+    const paddocks = groupTheHorsesIntoPaddocks();
+    console.log(JSON.stringify(paddocks));
+    return paddocks.lonelyHorses.find((x) => x);
   }
 }
 

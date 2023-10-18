@@ -30,6 +30,14 @@
         "age": 11,
         "likes": ["apples", "staring into the distance"],
         "hates": ["scratches on the nose"]
+    },
+    {
+        "id": 5,
+        "name": "Professor Kanel",
+        "weight": 600,
+        "age": 9,
+        "likes": ["hay", "horse friends", "neighing"],
+        "hates": []
     }
     ]
 }
